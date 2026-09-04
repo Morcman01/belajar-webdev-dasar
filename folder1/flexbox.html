@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<h1>FLEX-BOX</h1>
+<a href="../index.html" style="font-size: 2em;">Back to main menu</a>
+
+<div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+</div>
+
+<div>
+    <h2 style="font-weight: normal; font-size: 1.3em;">Flex allows flexible and responsive ui placement, the display: flex; properties is placed in the container's class. flex box has multiple ways to be styled: flex-direction, justify content (x axis), text-align (y-axis), flex wrap (for when there's lots of special-elements), align-content (usually used with flex-wrap) you can also add gaps between elements using column-gap and row-gap. you can also align individual elements using the align-self property, and set the order of each elements using order</h2>
+</div>
+
+<style>
+    .container{
+        border: solid 2px;
+        height: 90vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        row-gap: 5px;
+        column-gap: 5px;
+    }
+    .box{
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        font-size: 8em;
+        border-radius: 15px;
+    }
+    #box1{
+        background-color: rgb(70, 162, 243);
+    }
+    #box2{
+        background-color: rgb(58, 173, 79);
+    }
+    #box3{
+        background-color: rgb(243, 70, 70);
+    }
+    #box4{
+        background-color: rgb(255, 232, 21);
+    }
+</style>

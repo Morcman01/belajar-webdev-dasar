@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+
+/* HEADER (NAVBAR AND TITLE) */
+header{
+    background-color: rgb(27, 51, 85);
+    margin: 0px;
+}
+.title{
+    text-align: center;
+    margin: 0px;
+    padding: 25px 25px;
+    color: aliceblue;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(33, 51, 117);
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: flex;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: rgb(24, 37, 83);
+}
+.navbar li{
+    float: left;
+}
+
+
+
+/* MAIN CONTENT (ASIDE, SECTION, ARTICLE) */
+
+main{
+    border: 2px solid red;
+}
+aside{
+    width: 20%;
+    border: solid 2px;
+    float: left;
+    padding: 10px;
+}
+section{
+    width: 40%;
+    border: solid 2px blue;
+    float: left;
+    padding: 10px;
+}
+article{
+    width: 40%;
+    border: solid 2px green;
+    float: left;
+    padding: 10px;
+}
+/* .main-container{
+    height: 500px;
+} */
+
+
+/* FOOTER */
+footer{
+    background-color: rgb(27, 51, 85);
+    color: aliceblue;
+    padding: 25px;
+    text-align: center;
+    display: block;
+    clear: both;
+}
+
+
+@media screen and (max-width:600px){
+    aside, section, article{
+        width: 100%;
+    }
+}

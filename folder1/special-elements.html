@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<h1>SPECIAL ELEMENTS</h1>
+<a href="../index.html">Back to main menu</a>
+
+<p>To create special-elements, we use & text ;</p>
+<p>for example, we write & lt ; for &lt;  AND  & gt ; for &gt; (ga jelas di web, liat di html file nya)</p>
+
+<p>to connect two words in a line when using space, use & nbsp ;</p>
+
+<p>to create a dummytext quickly, use lorem + text amount</p>
+
+<p>to create a linebreak, use &lt;br&gt;</p>
+
+<br>
+
+<p>to create a horizontal line, use &lt;hr&gt;</p>
+<hr>
+
+<h2 id="list">LISTS</h2>
+<h3>Unordered List</h3>
+<p>to create an unordered list, use &lt;ul&gt; and &lt;li&gt;</p>
+<ul>
+    <li>Item no. 1</li>
+    <li>Item no. 2</li>
+    <li>Item no. 3</li>
+</ul>
+
+<p>to create an ordered list, use &lt;ol&gt; and &lt;li&gt;</p>
+<ol>
+    <li>Item no. 1</li>
+    <li>Item no. 2</li>
+    <li>Item no. 3</li>
+</ol>
+
+<p>to create a description list, use &lt;dl&gt;, &lt;dt&gt; and &lt;dd&gt;</p>
+<dl>table's header
+    <dt>title 1
+        <dd>desc. 1</dd>
+    </dt>
+    <dt>title 2
+        <dd>desc. 2</dd>
+    </dt>
+    <dt>title 3
+        <dd>desc. 3</dd>
+    </dt>
+</dl>
+
+<hr>
+
+<h2>TABLES</h2>
+<h3>to create a table, use &lt;table&gt;, &lt;tr&gt;, &lt;th&gt; and &lt;td&gt;</h3>
+<table border="1">
+    <tr align="center">
+        <th width="100">monday</th>
+        <th width="100">tuesday</th>
+        <th width="100">wednesday</th>
+        <th width="100">saturday</th>
+        <th width="100">friday</th>
+        <th width="100">saturday</th>
+        <th width="100">sunday</th>
+    </tr>
+    <tr align="center">
+        <td width="100">test1</td>
+        <td width="100">test1</td>
+        <td width="100">test1</td>
+        <td width="100">test1</td>
+        <td width="100">test1</td>
+        <td width="100">test1</td>
+        <td width="100">test1</td>
+    </tr>
+</table>
+
+<hr>
+
+<h2>BUTTONS</h2>
+<h3>to create a button, use &lt;button&gt;</h3>
+<button id="button1" style="background-color: aqua; font-weight: bold; color: black !important;" onclick="doSomething()">Click Me!</button>
+
+<script>
+    function doSomething(){
+        document.getElementById("button1").innerHTML = "Hello World"
+    }
+</script>
+<h4>buttons can be used for lots of stuff, notably to run a js script</h4>
+
+
+<style>
+  body{
+    background-color: grey;
+  }
+</style>

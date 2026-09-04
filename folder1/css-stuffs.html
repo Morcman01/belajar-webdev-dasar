@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<h1>CSS STUFFS (DONE INLINE)</h1>
+<a href="/index.html">Back to main menu</a>
+
+<style>
+    body{
+        background-color: grey;
+    }
+    #paragraph{
+        border-bottom: 5px solid red;
+        border-left: 5px inset green;
+        border-top: 5px ridge blue;
+        border-right: 5px dashed white;
+        /* border-radius: 10px; */
+    }
+    #p2{
+        text-shadow: 1px 2px 3px red; /*horizontal offset - vertical offset - blur, there can be multiple shadows per object*/
+    }
+    .box{
+        border: 5px solid;
+        font-size: 5em;
+        width: 250px;
+        height: 250px;
+        text-align: center;
+        margin: 50px;
+    }
+
+    /*margins*/
+    #box1{
+        background-color: red;
+        margin-left: auto;
+    }
+    #box2{
+        background-color: blue;
+        margin: auto;
+    }
+    #margin-div{
+        border: 5px solid;
+        display: flow-root;
+    }
+
+    /* float */
+    .images{
+        margin: 15px;
+    }
+    #img1{
+        float: left;
+    }
+    #tania{
+        float: right;
+    }
+
+    /*overflows*/
+    #overflow-div{
+        border: 5px solid;
+        height: 100px;
+        overflow: auto;
+        /* overflow: clip-scroll-visible-hidden;
+        overflow-clip-margin: 20px; */
+    }
+
+    /* display properties */
+    #display-div{
+        background-color: rgb(70, 135, 192);
+    }
+    #display-span{
+        background-color: rgb(158, 58, 58);
+    }
+    
+
+    /* padding, width and height */
+    .padding-inner-div{
+        border: 5px solid;
+        padding: 10px;
+        width: 40%;
+        margin: 20px;
+        height: auto;
+        box-sizing: border-box; /* this properties allow divs to be treated according to its height and width instead of being a block leve element*/
+        /* float: left; */
+
+        max-width: 30%;
+        min-width: 10%;
+    }
+
+    /* Combinators */
+    #combinator-div{
+        border: 3px solid;
+    }
+    #combinator-div p{
+        background-color: aliceblue;
+    }
+    #combinator-div > p{
+        background-color: aqua;
+    }
+    #combinator-div + p{
+        background-color: blueviolet;
+    }
+    /* #combinator-div ~ p{
+        background-color: rgb(182, 37, 37);
+    } */
+    /* There are multiple combinators: descendant ( ), child (>), general sibling (~), adjacent sibling (+) */
+</style>
+
+<h2>BORDERS</h2>
+
+<h2 style="border-style: solid;">SOLID BORDERS</h2>
+<h2 style="border-style: dashed;">DASHED BORDERS</h2>
+<h2 style="border-style: dotted;">DOTTED BORDERS</h2>
+<h2 style="border-style: double;">DOUBLE BORDERS</h2>
+<h2 style="border-style: groove;">GROOVE BORDERS</h2>
+<h2 style="border-style: ridge;">RIDGE BORDERS</h2>
+<h2 style="border-style: inset;">INSET BORDERS</h2>
+<h2 style="border-style: outset;">OUTSET BORDERS</h2>
+
+<p id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, perferendis! Voluptate aliquid ratione, molestiae enim id ducimus facere rerum, quod iusto recusandae porro veniam sed ullam quis debitis dolores eligendi exercitationem doloremque alias placeat voluptatibus illum. Excepturi minus atque dolore rerum voluptatibus quidem debitis id, quae culpa doloribus molestiae in voluptas laudantium veniam dolorem nisi a? Magni enim eaque eligendi deleniti totam, minima ipsa quidem ea. Incidunt quibusdam ut cupiditate consectetur, fuga quisquam. Illum tempora deserunt consequuntur ipsam expedita necessitatibus quo? Soluta error officia similique atque doloremque. Animi necessitatibus sapiente officiis consectetur, aperiam obcaecati. Placeat dignissimos rerum iste, quaerat harum quam odit nesciunt eum molestias nobis voluptatum natus fugiat exercitationem blanditiis unde vel. Modi hic, vitae velit cupiditate id rem repellendus unde aliquid. Quod impedit, aliquid velit sapiente consequuntur architecto officia, illum mollitia quas recusandae, adipisci vitae facere quidem iure excepturi minus doloribus ut sint enim voluptates culpa iste quam. Facilis, ad? Harum, amet? Animi assumenda delectus temporibus consectetur cumque qui adipisci, placeat expedita. Minima perspiciatis pariatur ex qui sapiente alias neque! Temporibus, sed tempora molestias similique corporis ad hic sint commodi ea, quasi exercitationem ullam dolor voluptates autem voluptatum labore modi dolorum omnis cumque minima. Ratione ad debitis necessitatibus quasi quo dolorem iure quidem distinctio ipsam animi harum temporibus excepturi expedita ipsum beatae perferendis, voluptate deserunt suscipit magnam consequuntur corrupti ab molestiae praesentium vitae! Odio, reiciendis! Quo distinctio necessitatibus minus possimus non voluptates repudiandae assumenda iure facere nesciunt obcaecati, perferendis in ex doloribus fuga sed officia amet placeat quam sint eum saepe eius sequi rerum. Nobis amet magni possimus alias sapiente animi ratione nam incidunt, harum velit, perferendis officia libero, illo aperiam doloremque. Placeat et dolores tenetur incidunt saepe sunt tempore ipsum doloremque eum necessitatibus minima, suscipit at! Facilis voluptates cumque, laudantium inventore eveniet doloribus! Natus, molestiae earum. Et.</p>
+
+
+<hr>
+
+
+<h2>SHADOWS</h2>
+<h3 id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dignissimos dolore vitae soluta, voluptas repellat odio rem error minus aliquid reiciendis amet repudiandae suscipit quasi deleniti rerum est nemo molestias?</h3>
+
+
+<hr>
+
+
+<h2>MARGINS</h2>
+<div class="box" id="box1">BOX 1</div> 
+<div class="box" id="box2">BOX 2</div> 
+
+
+<hr>
+
+
+<h2>FLOAT</h2>
+
+<div id="margin-div">
+    <img src="/images/monkey1.jpeg" alt="monkey1" id="img1" class="images">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis nihil repellat repudiandae iste temporibus non earum explicabo aliquid aspernatur odio? Illo impedit suscipit sit dolores libero odit officiis provident eveniet natus autem delectus non voluptatem neque tempore nulla architecto unde quisquam iure, nemo quidem corrupti consequatur, pariatur nostrum! Quod magni at consectetur rerum sed minima perspiciatis aperiam quos vel, neque ut mollitia voluptatibus nisi maxime sapiente et, cum debitis ab voluptatem quisquam aut? Amet cum ratione, culpa consectetur quas magni, itaque repudiandae, quisquam unde assumenda reiciendis aperiam. Facilis soluta neque culpa iure architecto voluptatem earum modi vel? Suscipit, praesentium repellat.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis nihil repellat repudiandae iste temporibus non earum explicabo aliquid aspernatur odio? Illo impedit suscipit sit dolores libero odit officiis provident eveniet natus autem delectus non voluptatem neque tempore nulla architecto unde quisquam iure, nemo quidem corrupti consequatur, pariatur nostrum! Quod magni at consectetur rerum sed minima perspiciatis aperiam quos vel, neque ut mollitia voluptatibus nisi maxime sapiente et, cum debitis ab voluptatem quisquam aut? Amet cum ratione, culpa consectetur quas magni, itaque repudiandae, quisquam unde assumenda reiciendis aperiam. Facilis soluta neque culpa iure architecto voluptatem earum modi vel? Suscipit, praesentium repellat.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis nihil repellat repudiandae iste temporibus non earum explicabo aliquid aspernatur odio? Illo impedit suscipit sit dolores libero odit officiis provident eveniet natus autem delectus non voluptatem neque tempore nulla architecto unde quisquam iure, nemo quidem corrupti consequatur, pariatur nostrum! Quod magni at consectetur rerum sed minima perspiciatis aperiam quos vel, neque ut mollitia voluptatibus nisi maxime sapiente et, cum debitis ab voluptatem quisquam aut? Amet cum ratione, culpa consectetur quas magni, itaque repudiandae, quisquam unde assumenda reiciendis aperiam. Facilis soluta neque culpa iure architecto voluptatem earum modi vel? Suscipit, praesentium repellat.</p>
+
+    <img src="/images/tania.jpg" alt="my bubu" id="tania" class="images">
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis nihil repellat repudiandae iste temporibus non earum explicabo aliquid aspernatur odio? Illo impedit suscipit sit dolores libero odit officiis provident eveniet natus autem delectus non voluptatem neque tempore nulla architecto unde quisquam iure, nemo quidem corrupti consequatur, pariatur nostrum! Quod magni at consectetur rerum sed minima perspiciatis aperiam quos vel, neque ut mollitia voluptatibus nisi maxime sapiente et, cum debitis ab voluptatem quisquam aut? Amet cum ratione, culpa consectetur quas magni, itaque repudiandae, quisquam unde assumenda reiciendis aperiam. Facilis soluta neque culpa iure architecto voluptatem earum modi vel? Suscipit, praesentium repellat.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis nihil repellat repudiandae iste temporibus non earum explicabo aliquid aspernatur odio? Illo impedit suscipit sit dolores libero odit officiis provident eveniet natus autem delectus non voluptatem neque tempore nulla architecto unde quisquam iure, nemo quidem corrupti consequatur, pariatur nostrum! Quod magni at consectetur rerum sed minima perspiciatis aperiam quos vel, neque ut mollitia voluptatibus nisi maxime sapiente et, cum debitis ab voluptatem quisquam aut? Amet cum ratione, culpa consectetur quas magni, itaque repudiandae, quisquam unde assumenda reiciendis aperiam. Facilis soluta neque culpa iure architecto voluptatem earum modi vel? Suscipit, praesentium repellat.</p>
+</div>
+
+
+<hr>
+
+
+<h2>OVERFLOWS</h2>
+<div id="overflow-div">
+    <p style="margin: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, consequatur ex. Voluptate facilis rerum nihil, debitis aperiam accusamus, minus repudiandae vel deleniti veritatis aliquam ad libero quasi odit quae eligendi assumenda reiciendis, illo pariatur inventore distinctio? Facere est dolorum officia porro minima eaque illo nobis rem incidunt recusandae quam ipsum possimus sequi culpa totam, consequuntur impedit tempore accusantium fugit ducimus! Ipsam id expedita mollitia quos reprehenderit sunt illo. Eligendi quam, tenetur saepe corporis dicta illo dolorum ipsam. Veritatis laboriosam id atque mollitia, aut quasi, expedita suscipit sapiente commodi quae delectus culpa possimus. Quia eaque inventore, ullam laboriosam praesentium soluta consectetur, assumenda laborum minima aliquid facilis possimus consequatur ipsa voluptates commodi, provident error. Voluptas aliquam veniam, aliquid fuga magni reprehenderit. Quibusdam sequi reiciendis soluta sit. Voluptate ullam inventore illum consectetur eligendi asperiores tenetur recusandae quod laboriosam id ab reiciendis maxime, sequi, dicta maiores distinctio, corrupti velit aspernatur! Nobis velit amet odit ducimus eos neque similique esse nostrum quisquam beatae sapiente consequatur vitae nisi asperiores soluta maiores nesciunt, ipsam quis facere? Rem, nihil sequi doloribus unde consectetur aperiam maiores deserunt voluptas temporibus asperiores sit quia deleniti saepe assumenda dolore suscipit perspiciatis vero esse voluptatem perferendis totam enim. Omnis obcaecati dignissimos, hic atque harum tempore corporis dolorum alias perspiciatis at, laboriosam soluta libero illum non aliquid iusto tempora voluptates optio? Minus ad esse ea velit fugit, rem, unde quibusdam sunt quas quod, ducimus obcaecati similique facere doloribus commodi. Doloribus laboriosam voluptates necessitatibus possimus ipsam voluptatem corporis quo, repellendus ipsa, nihil voluptas placeat? Optio sint obcaecati corporis repudiandae tempore ducimus labore deserunt nostrum perspiciatis. Natus, soluta delectus? Molestiae nemo voluptatibus quaerat, eum soluta laboriosam incidunt eius labore ipsa fugiat nihil ut odit harum mollitia minus delectus tempore earum id eos sed numquam. Ipsa accusamus aliquam blanditiis nesciunt dolor sit veritatis, incidunt aperiam explicabo nam est eum adipisci sequi, ex aspernatur, nihil id corporis? Minus ipsum amet modi non beatae pariatur consequatur earum quas atque, a molestias laborum, accusamus officia officiis unde dicta id nisi sit. Minima dolores cupiditate nemo reiciendis rerum eius explicabo molestias, quas eligendi voluptate necessitatibus corporis magnam officia itaque a non ad alias ullam voluptatem numquam delectus mollitia aperiam aut dolore? Explicabo nulla fugiat quae asperiores, aut ut porro placeat voluptates illo consequatur necessitatibus iste qui repudiandae iusto! In, sapiente quae natus quasi nisi eveniet illum impedit sint a adipisci, eos dolores quis facere? Voluptate recusandae numquam laboriosam autem neque eaque earum voluptas quasi sequi, minima velit distinctio iste facere sit quo ut, quam amet accusantium doloremque. Magni iste nihil assumenda impedit laudantium tempora quibusdam architecto unde exercitationem laboriosam quae dolorem recusandae amet quidem ullam similique alias repudiandae fuga saepe cum accusamus iure, omnis optio? Nisi doloremque sequi eius voluptatem sed temporibus quos voluptatum nihil! Veritatis deleniti beatae sint incidunt reiciendis a expedita nisi possimus consectetur inventore pariatur dolor exercitationem nesciunt eius autem dolorum eveniet explicabo et, fugit quos harum voluptatem! Voluptatibus ab temporibus facere quae nam! Dignissimos saepe, reprehenderit nam, minima soluta quaerat, optio officiis vero nisi nesciunt blanditiis quae vel iure enim libero doloremque! Rem, provident ipsum ad quasi soluta facere veniam nihil odit eius unde quisquam quas asperiores perferendis ullam qui porro fugit, dolorem repudiandae. Ut nulla amet sit aliquid iusto dignissimos natus magni ipsum, aliquam, cupiditate suscipit, harum voluptas repellat laboriosam? Similique itaque perferendis velit sit suscipit temporibus sequi assumenda id facere! Repudiandae aliquam pariatur enim, quaerat autem vero possimus reiciendis nostrum perferendis ex repellendus, obcaecati unde, quod molestiae. Commodi obcaecati architecto culpa, dignissimos pariatur impedit sint quos accusamus cum ab! Harum cupiditate optio ducimus temporibus. Mollitia voluptate ut inventore magni quod amet assumenda dolore accusantium possimus!</p>
+</div>
+
+
+<hr>
+
+
+<h2>DISPLAY PROPERTY</h2>
+<h3>Some elements have different diplay properties, some are block levels, while some are inline</h3>
+<div id="display-div">block level elements: div, h1, p, form, header, footer</div>
+<span id="display-span">inline level elements: span, a, img, etc</span>
+<p>there are several display properties, inline, block, inline-block, none, and hidden</p>
+
+
+<hr>
+
+
+<h2>PADDING, HEIGHT, AND WIDTH</h2>
+<div id="padding-div">
+    <div class="padding-inner-div">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam tempore quae doloribus officia placeat consequatur iure blanditiis cumque earum at optio possimus, cum consequuntur, delectus animi! Cum esse ipsam sit omnis quo quis iure assumenda adipisci possimus consequatur ab aut impedit magni dolore fugiat, labore explicabo minus dolor consectetur vel maxime. Tenetur, culpa inventore, autem odit architecto rem optio cumque et provident asperiores sed necessitatibus suscipit dignissimos molestias expedita ratione id ipsa dolorem eius deleniti aperiam nostrum maxime sit? Unde quidem id rem at maxime tempore quod, dolor libero eos, earum reprehenderit ipsum. Ullam officiis, velit rem in corporis dignissimos odio maxime deleniti architecto, dolorem eos quo, nulla quam repudiandae culpa asperiores magnam itaque sint quas voluptatibus sequi reprehenderit? Praesentium minima illum nihil, perspiciatis iste doloribus reiciendis rerum quas nostrum cumque, dicta magni reprehenderit optio eligendi iusto minus corrupti a, nemo voluptatum est rem beatae ipsam. Ipsum iure vitae, tempora ipsam modi, accusamus nisi omnis asperiores molestias sapiente eius quis necessitatibus, corrupti sit laborum assumenda! Et nisi, autem voluptate ratione ad rerum mollitia fuga ducimus consectetur explicabo animi delectus eos suscipit. Porro delectus libero esse molestias quae ratione explicabo saepe quaerat perspiciatis. Nulla dolorum cupiditate repudiandae ipsa dolore ratione consequuntur.</p>
+    </div>
+    <div class="padding-inner-div">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus magnam quas deleniti soluta inventore dolore, deserunt quidem repudiandae placeat autem odio numquam minus obcaecati, eligendi quaerat quis adipisci magni nulla, rerum consequuntur corporis accusantium ut ipsum laudantium. Tempore dicta neque earum perspiciatis ullam ducimus, inventore nam quis autem assumenda eos debitis, facere natus in laboriosam obcaecati hic iusto dignissimos quidem provident nisi officia! Ex libero odio mollitia cum sequi earum adipisci neque, fugit nobis perferendis similique cumque enim molestias temporibus impedit cupiditate natus porro commodi alias maiores optio ad hic asperiores? Nisi sed incidunt sunt qui cum nemo aut consequuntur nam cumque iusto similique, ullam provident nulla quae esse debitis voluptate saepe quia iste, officiis quibusdam error. Iste, excepturi! Accusamus, excepturi unde. Eius consequatur nostrum harum officia dicta placeat reprehenderit quam! Delectus maiores temporibus itaque dolorem consequatur modi a iste ut neque, fugit quaerat, pariatur doloremque expedita nam obcaecati accusantium voluptas sed distinctio tempora quisquam harum laudantium minus! Sit eaque repellat alias quidem delectus natus nemo temporibus quas mollitia nesciunt, necessitatibus tempora maxime dolorum ab, ad fugiat voluptate ut, quis ipsam consequatur laborum. Corrupti vitae asperiores nostrum dolorum reprehenderit suscipit in perspiciatis quasi incidunt distinctio sapiente, itaque excepturi voluptate repudiandae.</p>
+    </div>
+    
+</div>
+
+
+<hr>
+
+
+<h2>POSITIONS</h2>
+<h3>there are several positions an element can be positioned in:</h3>
+<p>Relative, to be positioned relative to where it normally is supposed to be</p>
+<p>Fixed, to stay in the same place on the screen, good for screen headers and such</p>
+<p>Absolute, to be placed in according to its closer ancestor (div parent), moving the parent div also moves the child div</p>
+<p>Sticky, similar to fixed, but it follows the page scroll</p>
+<p>Static, the default position</p>
+
+
+<hr>
+
+
+<h2>BACKGROUND IMAGES</h2>
+<p>did this one in index</p>
+
+
+<hr>
+
+<h2>DESCENDANTS AND COMBINATORS</h2>
+<div id="combinator-div">
+    <p>FIRST</p>
+    <p>SECOND</p>
+    <div>
+        <p>THIRD</p>
+    </div>
+</div>
+<p>FOURTH</p>
+<p>FIFTH</p>
+
+
+<hr>
+
+
+<h2>PSEUDO CLASSES</h2>
+
+<button id="button1">CLICK ME</button>
+<br>
+<a href="https://google.com" id="pseudo1" target="_blank">Google</a>
+<br>
+<ul>
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+    <li>item4</li>
+    <li>item5</li>
+</ul>
+<br>
+<div id="pseudo2" style="display: inline;">hover here
+    <p>Hello There</p>
+</div>
+
+<style>
+    #button1{
+        font-size: 1.5em;
+        background-color: aliceblue;
+        color: black;
+        margin: 15px;
+    }
+    #button1:hover{
+        font-size: 2em;
+        background-color: rgb(121, 173, 219);
+        color: black;
+    }
+    #button1:active{
+        font-size: 3em;
+        background-color: rgb(5, 78, 142);
+        color: black;
+    }
+    
+    #pseudo1:link{
+        color: rgb(132, 29, 29);
+        font-size: 2em;
+    }
+    #pseudo1:hover{
+        color: rgb(91, 7, 7);
+        font-size: 2em;
+    }
+    #pseudo1:visited{
+        color: rgb(29, 132, 39);
+        font-size: 2em;
+    }
+    li:hover{
+        background-color: antiquewhite;
+    }
+    li:nth-child(even){
+        background-color: rgb(122, 14, 14);
+    }
+    /* nth child is very flexible, with options like odd, even, 3n for every 3 element, 3n+1 for every third starting from 1, and any number */
+
+    #pseudo2 p{
+        display: none;
+    }
+    #pseudo2:hover p{
+        display: block;
+    }
+</style>
+
+
+<hr>
+
+
+<h2>PSEUDO ELEMENTS</h2>
+<p id="pseudo-element-1">Hello</p>
+<p id="pseudo-element-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ea, tempore optio neque aliquid iure eligendi, libero consequuntur, nihil deleniti quaerat sit vero magnam. Minima ut officia earum voluptas quaerat dolore tempore fugiat assumenda laboriosam Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id officiis sapiente eius doloribus laboriosam harum earum! Inventore maxime, ea sit facere dicta aliquid architecto saepe. Exercitationem, nemo ipsum! Qui provident unde quasi officiis error quos ex pariatur odio, fuga minus hic vitae suscipit, tempore magnam sit, reprehenderit asperiores. Rem, eum!.</p>
+
+<style>
+    #pseudo-element-1::first-letter{
+        font-size: 2em;
+        font-style: italic;
+    }
+    #pseudo-element-2::first-line{
+        background-color: aliceblue;
+        font-style: italic;
+    }
+    #pseudo-element-2::selection{
+        color: green;
+        background-color: darkgray;
+    }
+</style>
+
+
+<hr>
+
+<h2>PAGINATION</h2>
+
+<div class="pagination">
+    <a href="">&lt;</a>
+    <a href="" class="active">1</a>
+    <a href="">2</a>
+    <a href="">3</a>
+    <a href="">4</a>
+    <a href="">5</a>
+    <a href="">&gt;</a>
+</div>
+
+<style>
+    .pagination{
+        text-align: center;
+    }
+    .pagination a{
+        text-decoration: none;
+        padding: 8px 10px;
+        color: black;
+        display: inline-block;
+        font-weight: bold;
+    }
+    .pagination a.active{
+        background-color: rgb(77, 92, 192);
+        border-radius: 10px;
+    }
+    .pagination a:hover:not(.active){
+        background-color: rgb(211, 213, 215);
+        border-radius: 10px;
+    }
+</style>
+
+
+<hr>
+
+
+

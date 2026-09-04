@@ -1,0 +1,36 @@
+@font-face {
+    font-family:LifeSavers-Bold;
+    src: url(fonts/LifeSavers-Bold.ttf);
+}
+@font-face {
+    font-family:DynaPuff;
+    src: url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Life+Savers:wght@400;700;800&display=swap");
+}
+
+body{
+    background-color: rgb(26, 26, 59);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#title{
+    color: beige;
+    font-family: DynaPuff, LifeSavers-Bold;
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+}
+.odd{
+    color: rgb(39, 37, 37);
+    background-color: aliceblue;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: LifeSavers-Bold;
+}
+.even{
+    color: rgb(27, 26, 26);
+    background-color: aliceblue;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: LifeSavers-Bold;
+}
+
